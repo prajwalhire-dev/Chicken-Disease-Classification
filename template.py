@@ -28,7 +28,7 @@ list_of_files  = [
 ]
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
+    filepath = Path(filepath) #we are using Path, beacuse it makes the code more generic to all the operating systems.
     filedir,filename = os.path.split(filepath)
 
     if filedir != "":
