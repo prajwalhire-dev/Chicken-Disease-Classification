@@ -1,1 +1,8 @@
-key: val
+AUGMENTATION: True
+IMAGE_SIZE: [224,224,3] #as per the VGG 16 model 
+BATCH_SIZE: 16
+INCLUDE_TOP: False
+EPOCHS: 1
+CLASSES: 2 #since we have 2 types of class - healthy and coccodiosis
+WEIGHTS: imagenet #image classification is aleady trained on imagenet
+LEARNING_RATE: 0.01 
